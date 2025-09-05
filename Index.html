@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trang web bán đồ ăn</title>
+    <link rel="stylesheet" type="text/css" href="code.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="image/logo.jpg" alt="">
+        <h1>FastFood Phạm Hồng</h1>
+    </header>
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#" onclick="showcart()">Giỏ hàng <i  class='bx bx-cart'></i></a>
+        <a href="#">Liên hệ:</a>
+        <a href="#">0379844775</a>
+        <a href="https://www.facebook.com/phham.ong/"><i class='bx bxl-facebook-circle'></i>FaceBook</a>
+    </nav>
+    <main>
+        <section id="products">
+            <li class="chinh">
+                <div id="1" class="chinh">
+                    <h3>Pizza</h3>
+                    <p><img src="image/pizza.jpg" alt=""></p>
+                    <div class="canprice">
+                        <p>Giá: $55</p>
+                        <input class="SoLuong" type="number" min="1" max="100" value="1">
+                        <button class="colocart" onclick="addToCart(1)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li class="chinh">
+                <div id="2" class="chinh">
+                    <h3>Burger</h3>
+                    <p><img src="image/Burger.jpg" alt=""></p>
+                    <div class="canprice">
+                        <p>Giá: $30</p>
+                        <input class="SoLuong" type="number" min="1" max="100" value="1">
+                        <button class="colocart" onclick="addToCart(2)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li class="chinh">
+                <div id="3" class="chinh">
+                    <h3>Sushi</h3>
+                    <p><img src="image/Sushi.jpg" alt=""></p>
+                    <div class="canprice">
+                        <p>Giá: $35</p>
+                        <input class="SoLuong" type="number" min="1" max="100" value="1">
+                        <button class="colocart" onclick="addToCart(3)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li class="chinh">
+                <div id="4" class="chinh">
+                    <h3>Đùi Gà Chiên</h3>
+                    <p><img src="image/duigachien.jpg" alt=""></p>
+                    <div class="canprice">
+                        <p>Giá: $55</p>
+                        <input class="SoLuong" type="number" min="1" max="100" value="1">
+                        <button class="colocart" onclick="addToCart(4)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li class="chinh">
+                <div id="5" class="chinh">
+                    <h3>Hamburrger</h3>
+                    <p><img src="image/Hamburger.jpg" alt=""></p>
+                    <div class="canprice">
+                        <p>Giá: $30</p>
+                        <input class="SoLuong" type="number" min="1" max="100" value="1">
+                        <button class="colocart" onclick="addToCart(5)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li class="chinh">
+                <div id="6" class="chinh">
+                    <h3>Hot Dog</h3>
+                    <p><img src="image/Hotdog.jpg" alt=""></p>
+                    <div class="canprice">
+                        <p>Giá: $20</p>
+                        <input class="SoLuong" type="number" min="1" max="100" value="1">
+                        <button class="colocart" onclick="addToCart(6)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li class="chinh">
+                <div id="7" class="chinh">
+                    <h3>Kebab</h3>
+                    <p><img src="image/Kebab.jpg" alt=""></p>
+                    <div class="canprice">
+                        <p>Giá: $30</p>
+                        <input class="SoLuong" type="number" min="1" max="100" value="1">
+                        <button class="colocart" onclick="addToCart(7)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </li>
+            <li class="chinh">
+                <div id="8" class="chinh">
+                    <h3>Khoai Tây Chiên</h3>
+                    <p><img src="image/khoaitaychien.jpg" alt=""></p>
+                    <div class="canprice">
+                        <p>Giá: $50</p>
+                        <input class="SoLuong" type="number" min="1" max="100" value="1">
+                        <button class="colocart" onclick="addToCart(8)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+                <li class="chinh">
+                    <div id="9" class="chinh">
+                        <h3>Mì Tôm Trứng</h3>
+                        <p><img src="image/mitom1.jpg" alt=""></p>
+                        <div class="canprice">
+                            <p>Giá: $25</p>
+                            <input class="SoLuong" type="number" min="1" max="100" value="1">
+                            <button class="colocart" onclick="addToCart(9)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <li class="chinh">
+                        <div id="10" class="chinh">
+                            <h3>Sữa Milo</h3>
+                            <p><img src="image/suamilo.jpg" alt=""></p>
+                            <div class="canprice">
+                                <p>Giá: $15</p>
+                                <input class="SoLuong" type="number" min="1" max="100" value="1">
+                                <button class="colocart" onclick="addToCart(10)">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="chinh">
+                        <div id="11" class="chinh">
+                            <h3>Cocacola</h3>
+                            <p><img src="image/coca.jpg" alt=""></p>
+                            <div class="canprice">
+                                <p>Giá: $15</p>
+                                <input class="SoLuong" type="number" min="1" max="100" value="1">
+                                <button class="colocart" onclick="addToCart(11)">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="chinh">
+                        <div id="12" class="chinh">
+                            <h3>Trà Sữa</h3>
+                            <p><img src="image/trasua.jpg" alt=""></p>
+                            <div class="canprice">
+                                <p>Giá: $15</p>
+                                <input class="SoLuong" type="number" min="1" max="100" value="1">
+                                <button class="colocart" onclick="addToCart(12)">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </li>
+                </li>
+            </li>
+            </ul>
+        </section>
+        <aside id="cart">
+            <h2>Giỏ hàng</h2>
+            <ul id="cart-items">
+            </ul>
+            <p>Tổng tiền: <span id="total-cost">0</span>$</p>
+            <button id="checkout-btn">Thanh toán</button>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Liên hệ</h3>
+                <p>Địa chỉ: Thái Nguyên Đường Z115, Thành phố Thái Nguyên</p>
+                <p>Email: hong16062003@gmail.com</p>
+                <p>Điện thoại: 0379844775</p>
+            </div>
+            <div class="footer-col">
+                <h3>Chính sách</h3>
+                <ul class="nonee">
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách hoàn tiền</a></li>
+                </ul>
+            </div>
+            <p class="footer-text">© 2023 FastFood Phạm Hồng. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+    <script src="code.js"></script>
+
+</body>
+
+</html>
